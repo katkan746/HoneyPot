@@ -1,0 +1,11 @@
+rule,family,sensor,corpus_coverage,coverage_basis,deploy_for_blocking,confidence,notes
+WannaCry_Dropper_Loader,WannaCry,dionaea,55/55,projected from per-file string presence,yes,high,"anchors on launcher.dll + PlayGame; catches partial captures that the payload rule misses"
+WannaCry_Payload_Complete,WannaCry,dionaea,48/55,projected from per-file string presence,yes,high,"absence alongside a Dropper_Loader hit indicates a truncated capture"
+WannaCry_Killswitch_Domain,WannaCry,dionaea,22/55,projected from per-file string presence,no,informational,"will also fire on threat-intel documents quoting the domain; do not use standalone"
+RedTail_Installer_Script,RedTail,cowrie,1/1,all strings individually verified,yes,high,"redtail.* filenames are highly specific"
+RedTail_Rival_Miner_Cleanup_Script,RedTail,cowrie,1/1,all strings individually verified,yes,medium,"crontab-filter regex is reused across unrelated miner families; a hit is not proof of RedTail specifically"
+RedTail_Packed_ELF_Payload_Exact,RedTail,cowrie,5/5,exact hash match,yes,high,"zero false positives by construction and zero resilience; any recompile defeats it. Requires yara built with the hash module"
+HUNTING_Packed_Stripped_Static_ELF,RedTail,cowrie,5/5,projected,no,hunting-only,"fires on any UPX-packed ELF including legitimate ones; triage queues only, never blocking"
+XorDDoS_ELF,XorDDoS,cowrie,1/1,all strings individually verified,yes,high,"BB2FA36AAA9541F0 is a long family-specific constant; strongest rule in the set"
+Mirai_Telnet_Writable_Dir_Probe,Mirai-style,cowrie,9/9 sessions,command-text match in cowrie.json,no,behavioural,"log and pcap scanning only; the 9 captured artefacts are zero bytes so there is no binary to match"
+Multiarch_ELF_Dropper_Script_5_182_210_174,undetermined,cowrie,1/1,all strings individually verified,no,low,"family not determined; the host indicator will go stale when the payload host rotates"
