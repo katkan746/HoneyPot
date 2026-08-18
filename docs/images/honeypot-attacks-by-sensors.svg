@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 422" width="860" height="422" role="img" aria-labelledby="figTitle figDesc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="figTitle">Honeypot attacks by sensor, 13-17 August 2026</title>
+<desc id="figDesc">Horizontal bar chart of attacks recorded by each honeypot sensor over five days, totalling 762 thousand. Honeytrap 303 thousand, Cowrie 243 thousand, RDPHoneypot 153 thousand, Sentrypeer 36 thousand, Dionaea 14 thousand, Honeyaml 5 thousand, Tanner 2 thousand, ConPot 2 thousand, Heralding 1 thousand, H0neytr4p 1 thousand. Cowrie is highlighted because this report analyses its data.</desc>
+<rect width="860" height="422" rx="8" fill="#fcfcfb"/>
+<text x="28" y="40" font-size="18" font-weight="600" fill="#0b0b0b">Honeypot attacks by sensor</text>
+<text x="28" y="62" font-size="13" fill="#52514e">13–17 August 2026 · one T-Pot sensor · 762k attacks in total</text>
+<text x="28" y="80" font-size="13" fill="#52514e">Cowrie, in blue, records SSH and Telnet. This report analyses its data.</text>
+<text x="136" y="111" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Honeytrap</text>
+<g fill="#8a8880"><path d="M148,96 H754.0 A4,4 0 0 1 758.0,100 V112 A4,4 0 0 1 754.0,116 H148 Z" /></g>
+<text x="766.0" y="111" font-size="13" font-weight="400" fill="#52514e">303k</text>
+<text x="136" y="141" font-size="13" text-anchor="end" font-weight="600" fill="#0b0b0b">Cowrie</text>
+<g fill="#2a78d6"><path d="M148,126 H633.2 A4,4 0 0 1 637.2,130 V142 A4,4 0 0 1 633.2,146 H148 Z" /></g>
+<text x="645.2" y="141" font-size="13" font-weight="600" fill="#0b0b0b">243k</text>
+<text x="136" y="171" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">RDPHoneypot</text>
+<g fill="#8a8880"><path d="M148,156 H452.0 A4,4 0 0 1 456.0,160 V172 A4,4 0 0 1 452.0,176 H148 Z" /></g>
+<text x="464.0" y="171" font-size="13" font-weight="400" fill="#52514e">153k</text>
+<text x="136" y="201" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Sentrypeer</text>
+<g fill="#8a8880"><path d="M148,186 H216.5 A4,4 0 0 1 220.5,190 V202 A4,4 0 0 1 216.5,206 H148 Z" /></g>
+<text x="228.5" y="201" font-size="13" font-weight="400" fill="#52514e">36k</text>
+<text x="136" y="231" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Dionaea</text>
+<g fill="#8a8880"><path d="M148,216 H172.2 A4,4 0 0 1 176.2,220 V232 A4,4 0 0 1 172.2,236 H148 Z" /></g>
+<text x="184.2" y="231" font-size="13" font-weight="400" fill="#52514e">14k</text>
+<text x="136" y="261" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Honeyaml</text>
+<g fill="#8a8880"><path d="M148,246 H154.1 A4,4 0 0 1 158.1,250 V262 A4,4 0 0 1 154.1,266 H148 Z" /></g>
+<text x="166.1" y="261" font-size="13" font-weight="400" fill="#52514e">5k</text>
+<text x="136" y="291" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Tanner</text>
+<g fill="#8a8880"><path d="M148,276 H150.0 A2.0132013201320134,2.0132013201320134 0 0 1 152.0,278.013201320132 V293.986798679868 A2.0132013201320134,2.0132013201320134 0 0 1 150.0,296 H148 Z" /></g>
+<text x="160.0" y="291" font-size="13" font-weight="400" fill="#52514e">2k</text>
+<text x="136" y="321" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">ConPot</text>
+<g fill="#8a8880"><path d="M148,306 H150.0 A2.0132013201320134,2.0132013201320134 0 0 1 152.0,308.013201320132 V323.986798679868 A2.0132013201320134,2.0132013201320134 0 0 1 150.0,326 H148 Z" /></g>
+<text x="160.0" y="321" font-size="13" font-weight="400" fill="#52514e">2k</text>
+<text x="136" y="351" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">Heralding</text>
+<g fill="#8a8880"><path d="M148,336 H149.0 A1.0066006600660067,1.0066006600660067 0 0 1 150.0,337.006600660066 V354.993399339934 A1.0066006600660067,1.0066006600660067 0 0 1 149.0,356 H148 Z" /></g>
+<text x="158.0" y="351" font-size="13" font-weight="400" fill="#52514e">1k</text>
+<text x="136" y="381" font-size="13" text-anchor="end" font-weight="400" fill="#52514e">H0neytr4p</text>
+<g fill="#8a8880"><path d="M148,366 H149.0 A1.0066006600660067,1.0066006600660067 0 0 1 150.0,367.006600660066 V384.993399339934 A1.0066006600660067,1.0066006600660067 0 0 1 149.0,386 H148 Z" /></g>
+<text x="158.0" y="381" font-size="13" font-weight="400" fill="#52514e">1k</text>
+</svg>
