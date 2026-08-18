@@ -1,0 +1,8 @@
+hassh,kex_events,share_of_sessions,hosts_identified,role,notes
+98ddc5604ef6a1006a2b49a58759fbe6,31827,63%,,uncharacterised,"largest single brute-forcer plus an unrelated payload delivery; consistent with a widely used SSH library, not necessarily one operator"
+0a07365cc01fa9fc82608ba4019af499,7422,15%,6,credential-bruteforce,"772 sessions per host; >99% of sessions never reached a shell"
+16443846184eafde36765c9bab2f4397,3956,8%,9,ssh-scanner + payload-dropper,"7 hosts at 429 sessions each, plus 2 RedTail droppers at 3-4 sessions each"
+2ec37a7cc8daf20b10e1ad6221061ca5,1545,3%,12,honeypot-detection-recon,"32 sessions across 4 /24s and 2 ASNs; zero file uploads"
+01ca35584ad5a1b66cf6a9846b5b2821,455,0.9%,,uncharacterised,
+3356ae6145fa86124298066e281ea2d9,163,0.3%,,uncharacterised,
+bf7dbf67,,,1,credential-validator,"truncated form as published; 195.178.110.137; authenticates but never issues a command"
