@@ -1,0 +1,3 @@
+fingerprint,fingerprint_type,attempts,sources,notes
+71:3a:b0:18:e2:6c:41:18:4e:56:1e:fd:d2:49:97:66,md5,2,195.178.110.137,"1024-bit RSA using the legacy exponent-35 encoding; older than any current ssh-keygen default, suggesting a leaked or vendor-default key being sprayed. Not yet verified against known-compromised key sets."
+d4:98:c4:f3:12:ef:3e:29:38:34:62:21:fd:99:ec:ef,md5,2,"192.42.116.18,185.220.101.105","offered from two confirmed Tor exit nodes; where the network address is deliberately unstable, the key is the durable identifier"
