@@ -1,0 +1,7 @@
+indicator,type,protocol,context,notes
+5.182.210.174,ipv4,http,http://5.182.210.174/ok,"payload retrieval attempt observed in session; 12 logged commands from 45.198.224.26, all failed"
+5.182.210.174,ipv4,http,"http://5.182.210.174/{af8816,8e9f60,fefd81,d1d1d3,b7e327,e6af82,a74d7e,18c0c9,dfbfd1,ef2a92,1493f3,1b2ad0}","12 payload URLs hardcoded in captured dropper 6aa5054a...; none of the 12 payloads was itself captured"
+23.160.56.218,ipv4,http,http://23.160.56.218/new.php?type=${local_arch},"XorDDoS staging payload; the delivering SSH source and the payload host are the same machine"
+217.60.195.113,ipv4,https,https://217.60.195.113/sh,payload retrieval attempt observed in session
+217.60.195.113,ipv4,scp,scp dlr@217.60.195.113:sh,"attempted with a private key pasted into the session; the key is therefore recorded in the honeypot logs and is NOT reproduced here"
+rsa-key-20230629,ssh-key-comment,ssh,authorized_keys persistence,"PuTTYgen identifier dated June 2023; stable cross-campaign marker"
