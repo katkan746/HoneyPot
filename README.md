@@ -12,7 +12,7 @@ ten honeypot services. Each service is analysed in its own folder.
 ## Contents
 
 | Folder | Sensor | Events|
-|---|---|---|---|
+|---|---|---|
 | [`cowrie/`](cowrie/) | SSH and Telnet | 243k |
 | [`dionaea/`](dionaea/) | SMB | 14k |
 
