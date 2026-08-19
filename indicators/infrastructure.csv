@@ -4,4 +4,4 @@ indicator,type,protocol,context,notes
 23.160.56.218,ipv4,http,http://23.160.56.218/new.php?type=${local_arch},"XorDDoS staging payload; the delivering SSH source and the payload host are the same machine"
 217.60.195.113,ipv4,https,https://217.60.195.113/sh,payload retrieval attempt observed in session
 217.60.195.113,ipv4,scp,scp dlr@217.60.195.113:sh,"attempted with a private key pasted into the session; the key is therefore recorded in the honeypot logs and is NOT reproduced here"
-rsa-key-20230629,ssh-key-comment,ssh,authorized_keys persistence,"PuTTYgen identifier dated June 2023; stable cross-campaign marker"
+rsa-key-20230629,ssh-key-comment,ssh,authorized_keys persistence,-
