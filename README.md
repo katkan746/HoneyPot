@@ -13,8 +13,8 @@ ten honeypot services. Each service is analysed in its own folder.
 
 | Folder | Sensor | Events | Status |
 |---|---|---|---|
-| [`cowrie/`](cowrie/) | SSH and Telnet | 243k | Analysis complete |
-| [`dionaea/`](dionaea/) | SMB, FTP, MySQL, MSSQL, MongoDB, PPTP | 14k | Analysis complete (readable subset — see below) |
+| [`cowrie/`](cowrie/) | SSH and Telnet | 243k |
+| [`dionaea/`](dionaea/) | SMB | 14k |
 
 **[`cowrie/`](cowrie/)** holds the main report. It asks how many separate
 attackers are really behind the traffic, and finds that 50,345 SSH sessions
