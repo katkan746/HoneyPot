@@ -140,9 +140,6 @@ dd0f515ed8fd732bbbdf78db2f93c2c6    9a936a0b3b66b6ad153f1a59426da531
 
 ---
 
-## Indicators
-
-Machine-readable versions live in [`indicators/`](indicators/).
 
 ### Captured malware
 
