@@ -242,9 +242,7 @@ payload immediately: seven files, built for five processor types.
 seven files were pushed repeatedly across sessions, which is why the payload
 hash table lists seven rows rather than twenty-one. 
 
-Both of these hosts share HASSH `16443846` with the fleet of scanners described
-above, appearing there with three or four sessions each. Same tool, different
-job.
+Both droppers carry HASSH 16443846, the same fingerprint as the seven-host scanning fleet in Finding 3. This means their connections were built on an identically configured SSH client stack — observed. Whether that indicates one operator running scanning and delivery as two stages of the same campaign, or two groups independently using the same library, cannot be determined from this data — unverified.
 
 ---
 
