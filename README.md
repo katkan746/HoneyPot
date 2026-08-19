@@ -13,10 +13,10 @@ ten honeypot services. Each service is analysed in its own folder.
 
 | Folder | Sensor | Events|
 |---|---|---|
-| [`cowrie/`](cowrie/) | SSH and Telnet | 243k |
+| [`cowrie/`](Cowrie/) | SSH and Telnet | 243k |
 | [`dionaea/`](dionaea/) | SMB | 14k |
 
-**[`cowrie/`](cowrie/)** holds the main report. It asks how many separate
+**[`cowrie/`](Cowrie/)** holds the main report. It asks how many separate
 attackers are really behind the traffic, and finds that 50,345 SSH sessions
 from thousands of addresses resolve to about six attack tools. It also contains
 the indicators — addresses, fingerprints, file hashes and keys — as CSV, in
