@@ -120,8 +120,8 @@ After these six, the counts fall immediately to double and single figures.
 Counting **separate sessions** for each fingerprint, rather than events, shows
 that the work was divided up deliberately.
 
-`0a07365cc01fa9fc82608ba4019af499` — six hosts, each with the same number of
-sessions:
+`0a07365cc01fa9fc82608ba4019af499` — fifteen hosts in total, six of them with
+exactly the same number of sessions:
 
 ```
 45.153.34.114   772        77.239.124.241   772
@@ -129,7 +129,12 @@ sessions:
 45.153.34.167   772        77.239.124.250   772
 ```
 
-`16443846184eafde36765c9bab2f4397` — seven hosts, again with identical counts:
+The other nine sit below that tier, at 672, 500, 500, 421, 252, 215, 186, 31
+and 13 sessions.
+
+`16443846184eafde36765c9bab2f4397` — twenty-two hosts, with the same shape:
+seven at an identical count, an eighth (`45.153.34.72`) one short at 428, and
+the rest tailing off from 173 downwards.
 
 ```
 91.92.40.23  429    91.92.40.44  429    91.92.40.46  429
@@ -138,13 +143,15 @@ sessions:
 ```
 
 Identical totals across hosts that are supposed to be independent do not occur
-by chance. A list of targets was divided into equal parts and handed to each
-worker.
+by chance. A list of targets divided into equal parts and handed to each worker
+would produce this; so would a fixed per-host quota set upstream. The equality
+is observed; the mechanism behind it is not.
 
-The behaviour of fleet `0a07365c` is pure password guessing. Across 772
-sessions from `77.239.124.250`, only six commands were typed in total, and all
-six were `uname -s -v -n -r -m`. More than 99% of its sessions never reached a
-command prompt at all.
+The behaviour of fleet `0a07365c` is pure password guessing. Within the portion
+of 17 August held in the archive, `77.239.124.250` produced six successful
+logins, and each ran a single command — `uname -s -v -n -r -m` — before closing
+within 30 milliseconds. No authenticated session ran a second command, and none
+delivered a payload.
 
 Registry records for the address ranges involved:
 
@@ -155,10 +162,12 @@ AS198364   77.239.124.0/24   US (RIPE-registered)
 ```
 
 `45.153.34.0/24` and `91.92.40.0/24` belong to the same network operator, even
-though they are registered in different countries. Addresses from both ranges
-also appear under **both** fingerprints. This data cannot show whether one
-operator runs two tools, or whether a shared hosting provider serves two
-different customers.
+though they are registered in different countries. Thirteen hosts in fleet
+`0a07365c` also appear under a second fingerprint,
+`084386fa7ae5039bcf6f07298a05a227`, at one or two sessions each — a low-volume
+client used alongside the main tool. No host carries both `0a07365c` and
+`16443846`. This data cannot show whether one operator runs two tools, or
+whether a shared hosting provider serves two different customers.
 
 ---
 
