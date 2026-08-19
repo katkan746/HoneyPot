@@ -19,7 +19,7 @@ ten honeypot services. This repository covers the SSH and Telnet sensor.
 are really behind the traffic, and finds that 50,345 sessions from thousands of
 addresses resolve to about six attack tools. It also contains the indicators —
 addresses, fingerprints, file hashes and keys — as CSV, in
-[`cowrie/indicators/`](HoneyPot/indicators/).
+[`/indicators/`](/indicators/).
 
 ## Scope
 
