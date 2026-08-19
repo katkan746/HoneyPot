@@ -310,9 +310,15 @@ job.
 
 ### An unattributed multi-architecture dropper
 
-The second upload, `6aa5054a…`, is a twelve-line shell script. Each line fetches
-a six-character payload from `5.182.210.174`, marks it executable, runs it with
-the argument `bc`, and deletes it.
+A Mirai-family multi-architecture dropper
+
+The second upload, 6aa5054a…, is a 1,608-byte shell script. Each of its twelve lines fetches a payload from 5.182.210.174, marks it executable, runs it, and deletes it.
+
+Delivery — observed. It arrived on 15 August over telnet from 45.198.224.26, after a successful login. Cowrie fetched it: the attacker's wget command caused a real outbound request to the attacker's own server, and the response was saved. This is the same address and same campaign as the chained download commands described earlier, not a separate event.
+
+Why the twelve payloads were never captured — observed. Cowrie downloads files, but it does not run them. The script was saved to disk and never interpreted, so its twelve fetch lines never executed. The attacker's chain also failed before that point, because it tried to run the script a fraction of a second before the download had finished.
+
+Classification — assessed. VirusTotal flags the file as malicious, 30 of 60 engines, under the threat label trojan.gen2/mirai.
 
 **It is deliberately left unnamed.** The structure — try every architecture in
 turn, single-word exec argument — is consistent with Mirai or Gafgyt lineage,
