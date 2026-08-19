@@ -54,22 +54,11 @@ Four points are worth drawing out:
   They connected 32 times, inspected the system each time, and never installed
   anything.
 - **One group did not test at all.** It installed malware immediately, in seven
-  files built for five different processor types. One of those builds targets
-  RISC-V, a processor design that is still uncommon, which shows the group is
-  actively developing its tools.
-- **Almost nobody tried to exploit a software flaw.** Across roughly 762,000
-  recorded attacks there was a single such attempt. Everything else was
-  guessing usernames and passwords.
+  files built for five different processor types.
 - **A second, unrelated criminal group used the same front door.** On the final
   day another operator logged in and installed a different kind of malware —
   one built to launch attacks against other people's systems rather than to
   mine currency. It arrived the same way, by guessing a weak password.
-
-**What this report cannot tell you.** The honeypot may have been set to accept
-a small share of passwords at random. Until that setting is checked, the number
-of successful logins in this data cannot be trusted, and no list of working
-passwords should be drawn from it. The study also covers one machine over five
-days. It is a snapshot, not a long-term trend.
 
 ### Attack volume by sensor
 
@@ -78,28 +67,6 @@ days. It is a snapshot, not a long-term trend.
 *Attacks recorded by each sensor over the five-day window, taken from the T-Pot
 dashboard totals. Cowrie, shown in blue, handles SSH and Telnet and is the
 source for every finding in this report.*
-
----
-
-## Observation window
-
-**13–17 August 2026. Five days, one sensor.** This is a snapshot rather than a
-long-term study. Collection on 17 August ended at midday, so that day is
-incomplete.
-
-**Coverage note — why the payload set grew.** The findings on attacker
-fingerprints and volumes below were written up on 16 August. Two further
-payloads landed on 17 August and were added afterwards: the XorDDoS sample and
-the unattributed dropper in [Finding 6](#finding-6--a-second-payload-family-and-one-that-cannot-be-named).
-The fingerprint, volume and session figures in Findings 1–5 have **not** been
-recomputed against the extra day and should be read as of 16 August. Payload
-counts and the indicator files are current through 17 August.
-
-The sensor holds about five days of data, because both Elasticsearch retention
-and log rotation are set to roughly that limit. Data from before 12 August no
-longer exists on the machine. Copying data to separate storage only began on 17
-August, so everything before that date is what happened to survive, rather than
-a sample chosen deliberately.
 
 ---
 
