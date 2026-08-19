@@ -403,27 +403,13 @@ Binaries are not included in this repository. Hashes only.
 | File | SHA-256 | Family | Delivered by |
 |---|---|---|---|
 | `skhqwensw` | `6f45c6d9c70d97f695cb7bbef362812a17f8ed4d37dafc342c26c86ed9b43638` | XorDDoS | `23.160.56.218` |
-| — | `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | unattributed | unknown |
+| — | `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | Mirai | `45.198.224.26` |
 
 Sizes are omitted because no hashing or file-inspection tooling was available
 when these two were triaged; the byte counts in the RedTail table above come
 from the earlier pass. The second sample was recovered from disk but its
 delivery session predates the readable log, so no source address can be stated.
 
-### XorDDoS host indicators
-
-```
-/etc/cron.hourly/gcc.sh
-*/3 * * * * root /etc/cron.hourly/gcc.sh
-/var/run/gcc.pid
-```
-
-The cron entry re-runs the payload every three minutes. Note that the C2 command
-vocabulary visible when the binary is decoded — `denyip=`, `rmfile=`, `md5=` —
-is **assembled at runtime and is not contiguous on disk**; a literal search for
-`denyip=` returns nothing. It is unusable as a signature, and the detection
-rules in [`../dionaea/detection-rules.yara`](../dionaea/detection-rules.yara)
-exclude it.
 
 ### Persistence technique
 
