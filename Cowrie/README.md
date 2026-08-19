@@ -308,9 +308,7 @@ job.
 
 ---
 
-### An unattributed multi-architecture dropper
-
-A Mirai-family multi-architecture dropper
+### A Mirai-family multi-architecture dropper
 
 The second upload, 6aa5054a…, is a 1,608-byte shell script. Each of its twelve lines fetches a payload from 5.182.210.174, marks it executable, runs it, and deletes it.
 
