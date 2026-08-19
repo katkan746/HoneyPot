@@ -5,9 +5,7 @@ honeypot is a machine that is exposed to the internet on purpose, so that
 attacks against it can be recorded safely. The report answers one question:
 **how many separate attackers are really behind the traffic?**
 
-The short answer is that there are far fewer than the raw numbers suggest. The
-sensor recorded 50,345 SSH sessions from thousands of different addresses, but
-those sessions come from only about six different attack tools. Three of those
+The short answer is that there are far fewer than the raw numbers suggest. The sensor recorded 50,345 sessions — 46,552 over SSH and 3,793 over Telnet — from thousands of different addresses, but those sessions come from only about six different attack tools. Three of those
 tools produce 86% of all sessions. If you rank the data by source address, you
 appear to face dozens of separate attackers. If you rank it by the fingerprint
 of the software they run, you see a handful of operators, and each one works in
@@ -72,9 +70,7 @@ source for every finding in this report.*
 
 ## Read this before the numbers
 
-This report is about SSH and Telnet, so it uses data from Cowrie alone. Cowrie
-is the sensor that imitates those two services, and it recorded roughly a third
-of all attacks:
+Modat's scanning is almost entirely absent from Cowrie: 13 sessions out of 50,345, none of which attempted a login. Their 192,636 events fall under other sensors, chiefly Honeytrap. Every finding below is therefore drawn from data that commercial scanning does not meaningfully affect. Where the 762k figure appears, it means all recorded events across all sensors, scanning included.
 
 | Sensor | Events | Share |
 |---|---|---|
@@ -114,15 +110,6 @@ On 13 August, all ten of the busiest Honeytrap sources belonged to
 85.217.149.22   9,390     85.217.149.11   5,782
 ```
 
-The remaining addresses (`sum_other_doc_count`) accounted for 114,556 events,
-which is more than the top ten combined. Many more hosts in that range were
-therefore taking part.
-
-**Why this matters for the method.** Three of these addresses (`.12`, `.40` and
-`.35`) appear at positions 4, 8 and 10 in the sensor's table of busiest
-sources. Presented that way, they look like three unrelated threats. Once they
-are grouped by address range, they are a single organisation, and that
-organisation is not an attacker.
 
 ---
 
