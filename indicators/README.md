@@ -29,21 +29,3 @@ identifier; the exit address is not.
 spans four /24s and two ASNs, and the largest ASN block still leaves a third
 of it operating. `hassh.csv` is the column that survives relocation.
 
-## Conventions
-
-- Empty cells mean the source analysis does not state a value — not zero.
-- `first_seen` / `last_seen` are only populated where the analysis gives a
-  date. Most rows are blank; the observation window as a whole is 13–17 August
-  2026.
-- `sessions` counts distinct sessions; `events` counts sensor documents. They
-  are not interchangeable.
-- Percentages in `hassh.csv` are shares of the 50,345 SSH sessions. The two
-  smallest are computed here (0.9%, 0.3%) and left blank in the analysis.
-- `bf7dbf67` is recorded in its truncated published form; the other
-  fingerprints are full 32-character MD5.
-- Addresses are not defanged, so these files can be fed to tooling directly.
-- `172.30.0.1` is deliberately absent: it is the Docker gateway, an artifact of
-  the sensor's own network, not a source. Filter RFC1918 before publishing any
-  source table derived from raw aggregations.
-- No binaries, no captured private keys, and no sensor address appear in this
-  directory or anywhere else in the repository.
