@@ -336,9 +336,9 @@ Binaries are not included in this repository. Hashes only.
 
 ### Payloads captured on 17 August (SHA-256)
 
-| File | SHA-256 | Family | Delivered by |
-|---|---|---|
-| `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | Mirai | `45.198.224.26` |
+| SHA-256 | Bytes | Family | Delivered by |
+|---|---|---|---|
+| `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | 1,608 | Mirai-family | `45.198.224.26` |
 
 ### Persistence technique
 
