@@ -243,11 +243,7 @@ fleet, but its fingerprint is different. The fingerprint therefore separates
 actors; it does not simply repeat what the address range already tells us.
 
 `130.12.180.51` and `77.90.185.20` ran no checks whatsoever. They installed a
-payload immediately: seven files, built for five processor types, one of them
-**RISC-V**. A RISC-V build points to a tool under active development, because
-that processor is still uncommon in the wild. `130.12.180.51` did this in three
-separate sessions. Files from both hosts were byte-for-byte identical, so the
-two hosts draw on the same build system.
+payload immediately: seven files, built for five processor types.
 
 **The 21 in the table above counts uploads, not distinct files.** The same
 seven files were pushed repeatedly across sessions, which is why the payload
