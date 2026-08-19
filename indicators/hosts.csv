@@ -1,43 +1,43 @@
-ip,prefix,asn,country,role,hassh,sessions,events,first_seen,last_seen,notes
-85.217.149.11,85.217.149.0/24,AS209334,NL,commercial-scanner,,,5782,2026-08-13,2026-08-13,"Modat B.V.; honeytrap events 13 Aug only; not an attacker"
-85.217.149.12,85.217.149.0/24,AS209334,NL,commercial-scanner,,,13751,2026-08-13,2026-08-13,"Modat B.V.; rank 4 in raw source-IP table"
-85.217.149.13,85.217.149.0/24,AS209334,NL,commercial-scanner,,,7178,2026-08-13,2026-08-13,Modat B.V.
-85.217.149.22,85.217.149.0/24,AS209334,NL,commercial-scanner,,,9390,2026-08-13,2026-08-13,Modat B.V.
-85.217.149.26,85.217.149.0/24,AS209334,NL,commercial-scanner,,,9473,2026-08-13,2026-08-13,Modat B.V.
-85.217.149.27,85.217.149.0/24,AS209334,NL,commercial-scanner,,,6017,2026-08-13,2026-08-13,Modat B.V.
-85.217.149.30,85.217.149.0/24,AS209334,NL,commercial-scanner,,,7444,2026-08-13,2026-08-13,Modat B.V.
-85.217.149.35,85.217.149.0/24,AS209334,NL,commercial-scanner,,,9643,2026-08-13,2026-08-13,"Modat B.V.; rank 10 in raw source-IP table"
-85.217.149.40,85.217.149.0/24,AS209334,NL,commercial-scanner,,,11139,2026-08-13,2026-08-13,"Modat B.V.; rank 8 in raw source-IP table"
-85.217.149.42,85.217.149.0/24,AS209334,NL,commercial-scanner,,,7904,2026-08-13,2026-08-13,Modat B.V.
-45.153.34.114,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,equal-share tier of a 15-host fleet
-45.153.34.151,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,equal-share tier of a 15-host fleet
-45.153.34.167,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,equal-share tier of a 15-host fleet
-77.239.124.241,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,"equal-share tier of a 15-host fleet; RIPE-registered"
-77.239.124.247,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,"equal-share tier of a 15-host fleet; RIPE-registered"
-77.239.124.250,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772,,,,"equal-share tier; within the archived portion of 17 Aug, 6 successful logins, each running only uname -s -v -n -r -m before closing"
-91.92.40.23,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.31,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.43,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.44,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.45,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.46,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-91.92.40.48,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429,,,,equal-share tier of a 22-host fleet
-193.32.162.15,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,297,,2026-08-13,2026-08-17,"session 7f563a2fe1bb 17 Aug 04:55; 7.0s; 302-byte TTY log; no payload"
-193.32.162.34,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,318,,2026-08-13,2026-08-17,no payload
-193.32.162.84,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,126,,2026-08-13,2026-08-17,no payload
-92.118.39.14,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,61,,2026-08-13,2026-08-17,no payload
-92.118.39.49,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,117,,2026-08-13,2026-08-17,no payload
-92.118.39.50,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,127,,2026-08-13,2026-08-17,no payload
-92.118.39.71,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,110,,2026-08-13,2026-08-17,no payload
-2.57.122.209,2.57.122.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,58,,2026-08-13,2026-08-17,no payload
-195.178.110.217,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,3,,2026-08-13,2026-08-17,no payload
-195.178.110.227,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,119,,2026-08-13,2026-08-17,no payload
-195.178.110.228,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,137,,2026-08-13,2026-08-17,no payload
-195.178.110.232,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,72,,2026-08-13,2026-08-17,no payload
-195.178.110.137,195.178.110.0/24,AS48090,BG,credential-validator,bf7dbf67fa9b26ee9f9deb99c49320ba,63,,,,"63 sessions; 13 authentications with zero commands; ASN inferred from the shared /24, not stated in source; offered pubkey 71:3a:... twice"
-130.12.180.51,,,,payload-dropper,16443846184eafde36765c9bab2f4397,4,,,,"RedTail; no environment check; files byte-identical to those from 77.90.185.20"
-77.90.185.20,,,,payload-dropper,16443846184eafde36765c9bab2f4397,3,,,,"RedTail; files byte-identical to those from 130.12.180.51; absent from the 17 Aug log, so delivery fell in the 13-16 Aug window"
-45.198.224.26,,,,payload-dropper,16443846184eafde36765c9bab2f4397,20,,2026-08-13,2026-08-17,"4 successful logins across SSH and telnet; session f93e4ba1cf41 15 Aug retrieved 6aa5054a... from http://5.182.210.174/ok via Cowrie's emulated wget; byte-identical chains on 16 and 17 Aug retrieved nothing"
-192.42.116.18,192.42.116.0/24,AS215125,NL,pubkey-auth-attempt,,,,,,"Tor exit node; offered pubkey d4:98:c4:..."
-185.220.101.105,,AS60729,DE,pubkey-auth-attempt,,,,,,"Tor exit node tor-exit-105.digitalcourage.de (Digitalcourage e.V., Berlin); offered pubkey d4:98:c4:..."
-64.89.163.156,,,,telnet-argument-injection,,,,2026-08-17,2026-08-17,"CVE-2026-24061; USER=-f root; only exploit attempt in the corpus"
+ip,prefix,asn,country,role,hassh,sessions
+85.217.149.11,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.12,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.13,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.22,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.26,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.27,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.30,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.35,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.40,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+85.217.149.42,85.217.149.0/24,AS209334,NL,commercial-scanner,,
+45.153.34.114,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+45.153.34.151,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+45.153.34.167,45.153.34.0/24,AS197170,DE,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+77.239.124.241,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+77.239.124.247,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+77.239.124.250,77.239.124.0/24,AS198364,US,credential-bruteforce,0a07365cc01fa9fc82608ba4019af499,772
+91.92.40.23,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.31,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.43,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.44,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.45,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.46,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+91.92.40.48,91.92.40.0/24,AS197170,BG,ssh-scanner,16443846184eafde36765c9bab2f4397,429
+193.32.162.15,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,297
+193.32.162.34,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,318
+193.32.162.84,193.32.162.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,126
+92.118.39.14,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,61
+92.118.39.49,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,117
+92.118.39.50,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,127
+92.118.39.71,92.118.39.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,110
+2.57.122.209,2.57.122.0/24,AS47890,RO,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,58
+195.178.110.217,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,3
+195.178.110.227,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,119
+195.178.110.228,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,137
+195.178.110.232,195.178.110.0/24,AS48090,BG,honeypot-detection-recon,2ec37a7cc8daf20b10e1ad6221061ca5,72
+195.178.110.137,195.178.110.0/24,AS48090,BG,credential-validator,bf7dbf67fa9b26ee9f9deb99c49320ba,63
+130.12.180.51,,,,payload-dropper,16443846184eafde36765c9bab2f4397,4
+77.90.185.20,,,,payload-dropper,16443846184eafde36765c9bab2f4397,3
+45.198.224.26,,,,payload-dropper,16443846184eafde36765c9bab2f4397,20
+192.42.116.18,192.42.116.0/24,AS215125,NL,pubkey-auth-attempt,,
+185.220.101.105,,AS60729,DE,pubkey-auth-attempt,,
+64.89.163.156,,,,telnet-argument-injection,,
