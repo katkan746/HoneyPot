@@ -320,38 +320,7 @@ Why the twelve payloads were never captured — observed. Cowrie downloads files
 
 Classification — assessed. VirusTotal flags the file as malicious, 30 of 60 engines, under the threat label trojan.gen2/mirai.
 
-**It is deliberately left unnamed.** The structure — try every architecture in
-turn, single-word exec argument — is consistent with Mirai or Gafgyt lineage,
-but nothing in the script self-identifies and **none of the twelve payloads was
-captured**, so there is no binary to classify. It was checked against and ruled
-out as both RedTail (no `redtail` fallback string) and Panchan (no `pan-chan`
-banner, no TCP/1919 peering, and it pulls over HTTP rather than peering).
-
-Its delivery session is also **not in the readable log** — it predates the
-window that survived rotation, so the source address is unknown. Note that
-`45.198.224.26` separately issued **12 logged commands** trying to fetch from
-the same host, `http://5.182.210.174/ok`, over telnet. Each command chained
-several download methods in one line — `wget`, `curl -O`, `busybox wget`,
-`/userfs/bin/wget`, `busybox curl -O` — and every one was logged as
-command-not-found. That host is confirmed payload infrastructure; no captured
-sample came from it.
-
-### Aborted telnet loaders
-
-Nine further artefacts were captured on 17 August and are **all zero bytes**.
-They are not payloads. Cowrie recorded a shell *redirection*, not a download:
-Mirai-family bots ran a writable-directory probe across `/var/run`, `/dev/shm`,
-`/tmp` and others, then abandoned the session before fetching anything. Five
-source addresses were involved, using CPE default credentials including
-`e8ehome1/e8ehome1` and `root/1234567890`. All nine logins succeeded and none
-delivered a file. They are excluded from the payload table below because they
-carry no content.
-
 ---
-
-## Indicators
-
-Machine-readable versions of everything below live in [`indicators/`](indicators/).
 
 ### RedTail payload (SHA-256)
 
@@ -370,15 +339,8 @@ Binaries are not included in this repository. Hashes only.
 ### Payloads captured on 17 August (SHA-256)
 
 | File | SHA-256 | Family | Delivered by |
-|---|---|---|---|
-| `skhqwensw` | `6f45c6d9c70d97f695cb7bbef362812a17f8ed4d37dafc342c26c86ed9b43638` | XorDDoS | `23.160.56.218` |
-| — | `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | Mirai | `45.198.224.26` |
-
-Sizes are omitted because no hashing or file-inspection tooling was available
-when these two were triaged; the byte counts in the RedTail table above come
-from the earlier pass. The second sample was recovered from disk but its
-delivery session predates the readable log, so no source address can be stated.
-
+|---|---|---|
+| `6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797` | Mirai | `45.198.224.26` |
 
 ### Persistence technique
 
@@ -396,7 +358,7 @@ created in June 2023, which makes it a stable marker across campaigns.
 
 ### Public keys offered for authentication
 
-Four public keys were offered across 50,345 sessions.
+Two distinct public keys were offered across 50,345 sessions, in four offerings.
 
 | Fingerprint | Sources |
 |---|---|
