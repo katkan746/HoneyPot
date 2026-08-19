@@ -22,10 +22,7 @@ the report assumes technical knowledge.
 August 2026 and left to be attacked. It was not a real server. It only
 pretended to be one, and it recorded every action taken against it.
 
-**How much arrived.** The machine recorded roughly 762,000 attacks in total.
-About a third of them, some 243,000, were attempts to log in over SSH and
-Telnet. Those two services are the subject of this report, because they are the
-normal way to take remote control of a Linux machine.
+**How much arrived.** The machine recorded roughly 762,000 events in total. About a quarter of those came from a commercial scanning company rather than an attacker, leaving roughly 569,000 that can reasonably be called attacks. 243,000 events were attempts to log in over SSH and Telnet. Those two services are the subject of this report, because they are the normal way to take remote control of a Linux machine.
 
 **The main finding.** Thousands of different internet addresses attacked the
 machine, so at first sight there appear to be thousands of attackers. There are
@@ -42,21 +39,14 @@ blocking the whole network operator behind most of them — three of those four
 ranges at once — would have stopped only eight. Blocking the software signature
 would have stopped all twelve, wherever they moved next.
 
-Four points are worth drawing out:
+Three points are worth drawing out:
 
-- **A quarter of the traffic was not an attack at all.** It came from Modat
-  B.V., a company registered in the Netherlands that scans the whole internet
-  and sells the results. Counting it as hostile would overstate the threat by
-  about 25%.
+- **A quarter of the traffic was not an attack at all.** It came from Modat B.V., a company registered in the Netherlands that scans the whole internet and sells the results. Its 192,636 events are excluded from the attack totals above. It barely touched the SSH and Telnet sensor — 13 sessions out of 50,345 — so the findings below are unaffected either way.
 - **One group tested the machine, worked out that it was a trap, and left.**
   They connected 32 times, inspected the system each time, and never installed
   anything.
 - **One group did not test at all.** It installed malware immediately, in seven
   files built for five different processor types.
-- **A second, unrelated criminal group used the same front door.** On the final
-  day another operator logged in and installed a different kind of malware —
-  one built to launch attacks against other people's systems rather than to
-  mine currency. It arrived the same way, by guessing a weak password.
 
 ### Attack volume by sensor
 
@@ -106,11 +96,11 @@ On 13 August, all ten of the busiest Honeytrap sources belonged to
 
 ---
 
-## Finding 2 — Six tools account for 90% of the traffic
+## Finding 2 — Six tools account for 90% of the sessions
 
 HASSH is a fingerprint of the way an SSH client negotiates encryption settings
 at the start of a connection. It identifies the software in use, not the
-machine that runs it. Counted across all sessions:
+machine that runs it. Counted by session:
 
 | HASSH | Sessions | Share |
 |---|---|---|
@@ -244,13 +234,13 @@ Both droppers carry HASSH 16443846, the same fingerprint as the seven-host scann
 
 ### A Mirai-family multi-architecture dropper
 
-The second upload, 6aa5054a…, is a 1,608-byte shell script. Each of its twelve lines fetches a payload from 5.182.210.174, marks it executable, runs it, and deletes it.
+The dropper, 6aa5054a…, is a 1,608-byte shell script. Each of its twelve lines fetches a payload from 5.182.210.174, marks it executable, runs it, and deletes it.
 
 Delivery — observed. It arrived on 15 August over telnet from 45.198.224.26, after a successful login. Cowrie fetched it: the attacker's wget command caused a real outbound request to the attacker's own server, and the response was saved. This is the same address and same campaign as the chained download commands described earlier, not a separate event.
 
 Why the twelve payloads were never captured — observed. Cowrie downloads files, but it does not run them. The script was saved to disk and never interpreted, so its twelve fetch lines never executed. The attacker's chain also failed before that point, because it tried to run the script a fraction of a second before the download had finished.
 
-Classification — assessed. VirusTotal flags the file as malicious, 30 of 60 engines, under the threat label trojan.gen2/mirai.
+Classification. VirusTotal flags the file as malicious, 30 of 60 engines, under the threat label trojan.gen2/mirai.
 
 ---
 
@@ -290,7 +280,7 @@ created in June 2023, which makes it a stable marker across campaigns.
 
 ### Public keys offered for authentication
 
-Two distinct public keys were offered across 50,345 sessions, in four offerings.
+Two distinct public keys were offered across 46,552 sessions, in four offerings.
 
 | Fingerprint | Sources |
 |---|---|
