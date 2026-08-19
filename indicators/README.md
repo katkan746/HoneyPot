@@ -12,14 +12,9 @@
 Modat B.V., a commercial scanning company, and account for roughly a quarter of
 the corpus. They are included because they dominate the raw volume and because
 excluding them silently is how that volume gets mistaken for attack traffic.
-Their role column reads `commercial-scanner`. Decide deliberately whether your
-environment wants them blocked.
+Their role column reads `commercial-scanner`.
 
 **Two addresses are Tor exit nodes** (`192.42.116.18`, `185.220.101.105`).
 Blocking them blocks Tor, not an actor. The key they offered is the durable
 identifier; the exit address is not.
-
-**Prefer the fingerprint to the address.** The recon fleet in `hosts.csv`
-spans four /24s and two ASNs, and the largest ASN block still leaves a third
-of it operating. `hassh.csv` is the column that survives relocation.
 
