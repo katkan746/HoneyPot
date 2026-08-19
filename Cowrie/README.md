@@ -112,7 +112,7 @@ HASSH is a fingerprint of the way an SSH client negotiates encryption settings
 at the start of a connection. It identifies the software in use, not the
 machine that runs it. Counted across all sessions:
 
-| HASSH | Events | Share |
+| HASSH | Sessions | Share |
 |---|---|---|
 | `98ddc5604ef6a1006a2b49a58759fbe6` | 31,827 | 63% |
 | `0a07365cc01fa9fc82608ba4019af499` | 7,422 | 15% |
