@@ -1,9 +1,5 @@
 # Indicators
 
-Machine-readable form of the indicators in the root `README.md`. Nothing here
-is new evidence — every row is transcribed from that analysis, and the analysis
-is the authority. If the two ever disagree, the analysis wins.
-
 | File | Contents |
 |---|---|
 | `hosts.csv` | Source addresses, with prefix, ASN, country, behavioural role and client fingerprint |
@@ -11,8 +7,6 @@ is the authority. If the two ever disagree, the analysis wins.
 | `payload-sha256.csv` | RedTail payload hashes and sizes |
 | `infrastructure.csv` | Payload retrieval endpoints and the persistence key comment |
 | `ssh-public-keys.csv` | Public keys offered during authentication |
-
-## Reading these before you block on them
 
 **Not every address here is an attacker.** The ten `85.217.149.0/24` rows are
 Modat B.V., a commercial scanning company, and account for roughly a quarter of
