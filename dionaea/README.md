@@ -143,10 +143,6 @@ they are the *same* seven files in each case:
 
 ---
 
-## Indicators
-
-Machine-readable versions live in [`indicators/`](indicators/).
-
 ### Captured malware
 
 All 55 Dionaea samples are WannaCry. Full MD5 and SHA-256 list in
