@@ -308,43 +308,6 @@ job.
 
 ---
 
-## Finding 6 — A second payload family, and one that cannot be named
-
-Every payload discussed so far is RedTail. On 17 August two further uploads
-arrived that are not.
-
-### XorDDoS
-
-`23.160.56.218` logged in over SSH with **root/ubnt** and uploaded a single
-32-bit ELF binary named `skhqwensw` at 07:04:02Z, session `f34033c2779d`. It is
-a denial-of-service bot, and unlike the RedTail payloads it is unpacked and
-identifies itself clearly:
-
-| Marker | Occurrences |
-|---|---|
-| `BB2FA36AAA9541F0` — the family's hardcoded XOR key | 6 |
-| `/etc/cron.hourly/gcc.sh` — persistence path | 2 |
-| `*/3 * * * * root /etc/cron.hourly/gcc.sh` | 1 |
-| `MSIE 6.0; Windows NT 5.2; SV1; TencentTraveler` — spoofed User-Agent | 1 |
-| `Accept-Language: zh-cn` | 1 |
-
-The staging script run in the same session is more revealing than the binary.
-It kills Chinese cloud-provider security agents (`aegis`, `aliyun`, `YDService`,
-`tat_agent`, `AliYunDun`), fetches
-`http://23.160.56.218/new.php?type=${local_arch}` — so the SSH source and the
-payload host are the same machine — then renames `wget` to `good` and `curl` to
-`cool` to slip past monitoring that watches for those command names, flushes
-iptables, and truncates `wtmp`, `btmp` and `lastlog`.
-
-**This is a different operator from the RedTail group, not a variant.**
-Different credentials, different architecture strategy (one binary, not five),
-different persistence (cron, not `authorized_keys`), and an anti-forensics step
-RedTail never performs.
-
-**What is not known:** no disassembly was performed, so the attack methods
-themselves are uncharacterised. The classification rests on strings and on the
-attacker's own script.
-
 ### An unattributed multi-architecture dropper
 
 The second upload, `6aa5054a…`, is a twelve-line shell script. Each line fetches
