@@ -240,10 +240,7 @@ payload immediately: seven files, built for five processor types.
 
 **The 21 in the table above counts uploads, not distinct files.** The same
 seven files were pushed repeatedly across sessions, which is why the payload
-hash table lists seven rows rather than twenty-one. Only one of those sessions —
-`c71e5cdb87f1`, on 17 August — falls inside the log window that survived
-rotation; `77.90.185.20` does not appear in it at all, so its deliveries sit in
-the 13–16 August portion and could not be re-verified.
+hash table lists seven rows rather than twenty-one. 
 
 Both of these hosts share HASSH `16443846` with the fleet of scanners described
 above, appearing there with three or four sessions each. Same tool, different
