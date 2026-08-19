@@ -7,12 +7,12 @@ attacks against it can be recorded safely.
 The sensor recorded roughly 762,000 attacks over the five days, spread across
 ten honeypot services. Each service is analysed in its own folder.
 
-![Bar chart of attacks recorded by each honeypot sensor between 13 and 17 August 2026. Honeytrap 303k, Cowrie 243k, RDPHoneypot 153k, Sentrypeer 36k, Dionaea 14k, Honeyaml 5k, Tanner 2k, ConPot 2k, Heralding 1k and H0neytr4p 1k, from a total of 762k.](docs/images/honeypot-attacks-by-sensor.svg)
+![Bar chart of attacks recorded by each honeypot sensor between 13 and 17 August 2026. Honeytrap 303k, Cowrie 243k, RDPHoneypot 153k, Sentrypeer 36k, Dionaea 14k, Honeyaml 5k, Tanner 2k, ConPot 2k[...]
 
 ## Contents
 
 | Folder | Sensor | Events |
-|---|---|---|---|
+|---|---|---|
 | [`cowrie/`](cowrie/) | SSH and Telnet | 243k |
 | [`dionaea/`](dionaea/) | SMB | 14k |
 
