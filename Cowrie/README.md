@@ -82,13 +82,6 @@ Counts are rounded to the nearest thousand. *Others* combines the nine
 remaining honeypot sensors: Honeytrap, RDPHoneypot, Sentrypeer, Dionaea,
 Honeyaml, Tanner, ConPot, Heralding and H0neytr4p.
 
-**Only seven CVE detections appear in the whole dataset:** `CVE-2020-11900`
-(four) and `CVE-2020-11910` (three). A CVE is a publicly catalogued software
-flaw. Both of these concern the Treck TCP/IP stack, and the rules that detect
-them trigger easily on malformed packets. Set against roughly 762,000 attacks,
-attempts to exploit a flaw are therefore almost absent. What the sensor mainly
-saw was scanning and password guessing.
-
 ---
 
 ## Finding 1 — A quarter of the traffic is a commercial scanning company
