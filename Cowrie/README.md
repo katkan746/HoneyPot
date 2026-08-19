@@ -228,12 +228,8 @@ twelve. The client fingerprint catches all twelve, wherever they move.
 | Delivers payload | **never** | never | 21 uploads (7 unique files) |
 | HASSH | `2ec37a7c` | `bf7dbf67` | `16443846` |
 
-`195.178.110.137` logged in thirteen times and typed **no commands at all**.
-This fits credential validation, where an operator confirms which username and
-password pairs work and records them for a later stage that does the real
-damage. It shares an address range with four hosts from the reconnaissance
-fleet, but its fingerprint is different. The fingerprint therefore separates
-actors; it does not simply repeat what the address range already tells us.
+`195.178.110.137` logged in thirteen times and typed no commands at all. This fits credential validation, where an operator confirms which username and password pairs work and records them for a later stage that does the real damage. It shares an address range with four hosts from the reconnaissance fleet, but its fingerprint is different.
+The fingerprint therefore separates this host from the fleet, where the address range alone would have grouped them together. What it cannot tell us is whether that separation means two operators or one operator running two tools — the same ambiguity noted in Finding 3.
 
 `130.12.180.51` and `77.90.185.20` ran no checks whatsoever. They installed a
 payload immediately: seven files, built for five processor types.
