@@ -9,7 +9,7 @@ honeypot services. About 192,000 of those came from a commercial internet
 scanning company rather than an attacker, leaving roughly 569,000 that can
 reasonably be called attacks. This repository covers the SSH and Telnet sensor.
 
-![Bar chart of attacks recorded by each honeypot sensor between 13 and 17 August 2026. Honeytrap 303k, Cowrie 243k, RDPHoneypot 153k, Sentrypeer 36k, Dionaea 14k, Honeyaml 5k, Tanner 2k, ConPot 2k, Heralding 1k and H0neytr4p 1k, from a total of 762k.](docs/images/honeypot-attacks-by-sensor.svg)
+![Bar chart of attacks recorded by each honeypot sensor between 13 and 17 August 2026. Honeytrap 303k, Cowrie 243k, RDPHoneypot 153k, Sentrypeer 36k, Dionaea 14k, Honeyaml 5k, Tanner 2k, ConPot 2k, Heralding 1k and H0neytr4p 1k, from a total of 762k.](/images/honeypot-attacks-by-sensor.svg)
 
 ## Contents
 
