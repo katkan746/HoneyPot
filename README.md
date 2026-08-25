@@ -15,9 +15,9 @@ reasonably be called attacks. This repository covers the SSH and Telnet sensor.
 
 | Folder | Sensor | Events | Sessions |
 |---|---|---|---|
-| [`cowrie/`](Cowrie/) | SSH and Telnet | 243k | 50,345 |
+| [`cowrie/`](Cowrie/report.md) | SSH and Telnet | 243k | 50,345 |
 
-**[`cowrie/`](Cowrie/)** holds the report. It covers 50,345 SSH and Telnet
+**[`cowrie/`](Cowrie/report.md)** holds the report. It covers 50,345 SSH and Telnet
 sessions and separates the traffic by what the attackers actually did once they
 were connected. Three groups behaved in completely different ways: one tested
 whether the machine was a honeypot and withdrew without installing anything, one
